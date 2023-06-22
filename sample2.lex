@@ -1,7 +1,6 @@
 %option noyywrap
 
 %{
-/* need this for the call to getlogin() below */
 #include <stdlib.h>
 #include <stdio.h>
 int lineno = 1;
@@ -15,7 +14,7 @@ ID          [a-z][a-z0-0]*
 
 %%
 {DIGIT}	        {ret_print("NUM"); }
-{ID}	        {ret_print("ID"); }
+{ID}	          {ret_print("ID"); }
 "+"             {ret_print("PLUS"); }
 "*"             {ret_print("TIMES"); }
 "\n"            {lineno += 1; }
