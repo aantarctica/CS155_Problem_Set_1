@@ -8,15 +8,14 @@ void ret_print(char *token_type);
 void yyerror();
 %}
 
-DIGIT       [0-9]+
-ID          [a-z][a-z0-0]*
-
+RESERVED_FUNCTION   "procedure"
+IDENTIFIER          [a-z][a-zA-Z0-9_]*
 
 %%
-{DIGIT}	        {ret_print("NUM"); }
-{ID}	          {ret_print("ID"); }
-"+"             {ret_print("PLUS"); }
-"*"             {ret_print("TIMES"); }
+{RESERVED_FUNCTION}	        {ret_print("RESERVED_FUNCTION"); }
+{IDENTIFIER}	            {ret_print("IDENTIFIER"); }
+"+"                         {ret_print("PLUS"); }
+"*"                         {ret_print("TIMES"); }
 "\n"            {lineno += 1; }
 [ \t\r\f]+      
 .               {yyerror("Unrecognized character"); }    
