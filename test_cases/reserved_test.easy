@@ -7,9 +7,9 @@ exit
 if true then x = 1 else x = 0
 
 case
-   x = 1 : output 'one'
-   x = 2 : output 'two'
-   x = 3 : output 'three'
+   x == 1 : output 'one'
+   x == 2 : output 'two'
+   x == 3 : output 'three'
    else : output 'higher than three'
 endcase
 
@@ -22,7 +22,7 @@ endwhile
 x = 0
 repeat
    x = x + 1
-untl x > 10
+until x > 10
 
 x = 0 
 loop
