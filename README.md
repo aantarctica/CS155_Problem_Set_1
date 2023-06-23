@@ -10,7 +10,7 @@ Student Number: 2019-02706
 
 ### Preliminaries
 
-This is a token analyzer for the `EASY` language developed in `wsl` `Ubuntu` and executed using `flex`.
+This is a token analyzer for the `EASY` language developed in `wsl` `Ubuntu` and executed using `flex`. This implementation does not handle comments.
 
 Device requirements: Installed with `flex`.
 
