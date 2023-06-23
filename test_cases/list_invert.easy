@@ -1,7 +1,3 @@
-// This is a comment - you may edit this out if you did not handle comments
-// list_invert.easy
-
-
 procedure invert(l)
    node(info,link)
    beta = lambda

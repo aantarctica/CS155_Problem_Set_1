@@ -1,6 +1,3 @@
-// This is a comment - you may edit this out if you did not handle comments
-// hanoi.easy
-
 procedure THP(n,S,T,I)
    
    if n = 1 then output 'Move disk from peg' S 'to peg' T
